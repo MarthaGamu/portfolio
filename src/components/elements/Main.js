@@ -28,6 +28,9 @@ const StyledContainer = styled.div`
       width: 150px;
       padding-top: 80px;
     }
+    @media screen and (max-width: 1500px) {
+      padding-top: 150px;
+    }
 
     img {
       width: 300px;
@@ -51,7 +54,9 @@ const StyledContainer = styled.div`
     @media screen and (max-width: 600px) {
       width: 100%;
     }
-
+    @media screen and (max-width: 1500px) {
+      width: 60%;
+    }
     h1 {
       font-size: 60px;
       padding: 30px;
@@ -72,6 +77,20 @@ const StyledContainer = styled.div`
       p {
         font-size: 15px;
         padding: 5px;
+      }
+
+      hr {
+        border-top: 2px dotted white;
+      }
+    }
+    @media screen and (max-width: 1500px) {
+      h1 {
+        font-size: 40px;
+        padding: 2px;
+      }
+      p {
+        font-size: 20px;
+        padding: 2px;
       }
 
       hr {
