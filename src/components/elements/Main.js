@@ -94,7 +94,7 @@ const StyledContainer = styled.div`
       }
 
       hr {
-        border-top: 2px dotted white;
+        border-top: 4px dotted white;
       }
     }
   }
