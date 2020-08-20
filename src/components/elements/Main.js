@@ -21,16 +21,14 @@ const StyledContainer = styled.div`
   .avatar {
     width: 300px;
     height: auto;
-
     margin: auto;
-    padding-top: 250px;
-    @media screen and (max-width: 600px) {
+    padding-top: 150px;
+    @media screen and (max-width: 900px) {
       width: 150px;
-      padding-top: 80px;
+      padding-top: 50px;
     }
-    @media screen and (max-width: 1500px) {
-      padding-top: 150px;
-    }
+ 
+  }
 
     img {
       width: 300px;
@@ -54,9 +52,7 @@ const StyledContainer = styled.div`
     @media screen and (max-width: 600px) {
       width: 100%;
     }
-    @media screen and (max-width: 1500px) {
-      width: 60%;
-    }
+   
     h1 {
       font-size: 60px;
       padding: 30px;

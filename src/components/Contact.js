@@ -3,44 +3,113 @@ import styled from "styled-components";
 import avatar from "./images/avatar.jpg";
 
 const StyledContact = styled.div`
-  .container-fluid {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: skyblue;
-  }
+  position: absolute;
+  background: #f5f5f5;
+  height: auto;
+  min-height: 100%;
   .innerContainer {
     width: 80%;
     height: 90%;
-    margin: 100px auto;
+    margin: 30px auto;
     display: flex;
-    background: red;
 
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1900px) {
+      padding: 100px;
+    }
     .leftSide {
-      background: yellow;
       flex: 1;
       text-align: center;
+      @media screen and (max-width: 600px) {
+        order: 2;
+      }
       h2 {
         padding-top: 50px;
         font-size: 40px;
         font-weight: 600;
       }
       p {
-        padding: 50px 150px;
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 300;
+        padding: 10px 50px 0px 50px;
+        @media screen and (max-width: 600px) {
+          padding-top: 30px;
+          font-size: 15px;
+          font-weight: 400;
+        }
+
+        @media screen and (max-width: 1400px) {
+          padding: 0px;
+        }
       }
 
       img {
-        width: 400px;
+        width: 300px;
         height: auto;
         border-radius: 4%;
         padding-top: 50px;
+        @media screen and (max-width: 600px) {
+          width: 200px;
+        }
       }
     }
     .rightSide {
-      background: pink;
       flex: 1;
+      @media screen and (max-width: 600px) {
+        order: 1;
+      }
+      h2 {
+        font-size: 40px;
+        padding-top: 50px;
+        font-weight: 600;
+        text-align: center;
+        @media screen and (max-width: 600px) {
+          padding-top: 10px;
+        }
+      }
+      .line {
+        width: 300px;
+        margin: auto;
+        @media screen and (max-width: 600px) {
+          width: 220px;
+        }
+        hr {
+          border-top: 3px dotted black;
+        }
+      }
+    }
+    .fontWrapper {
+      margin-top: 80px;
+      margin-left: 100px;
+      @media screen and (max-width: 600px) {
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+      p {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      i {
+        font-size: 50px;
+        @media screen and (max-width: 600px) {
+          font-size: 20px;
+        }
+      }
+    }
+    span {
+      font-size: 20px;
+      padding-left: 10px;
+      font-weight: 300;
+      @media screen and (max-width: 600px) {
+        padding-left: 2px;
+        font-size: 15px;
+        font-weight: 400;
+      }
     }
   }
 `;
@@ -65,7 +134,34 @@ function Contact() {
           </div>
 
           <div className="rightSide">
-            <i class="fab  fa fa-accessible-icon">Phone</i>
+            <h2>Contact Me</h2>
+            <div className="line">
+              <hr />
+            </div>
+            <div className="fontWrapper">
+              <p>
+                {" "}
+                <i class="fa fa-phone-square" aria-hidden="true">
+                  {" "}
+                </i>{" "}
+                <span> +44 775 1009 803</span>
+              </p>
+
+              <p>
+                <i class="fas fa fa-envelope"></i>
+                <span>marthamandizvidza@outlook.com</span>
+              </p>
+
+              <p>
+                <i class="fab fa fa-skype"></i>
+                <span>marthagmandizvidza</span>
+              </p>
+
+              <p>
+                <i class="fab fa fa-github-square"></i>
+                <span>MarGamu</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

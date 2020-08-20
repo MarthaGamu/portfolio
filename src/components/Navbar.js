@@ -29,6 +29,10 @@ const StyledNav = styled.nav`
   display: flex;
   color: white;
 
+  .navbar-toggler {
+    background: white;
+  }
+
   .leftSide {
     flex: 1;
     a {
