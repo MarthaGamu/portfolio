@@ -1,11 +1,11 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.css';
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
-import Main from './components/elements/Main';
-import Resume from './components/Resume';
-import Project from './components/Project';
-import Contact from './components/Contact';
+import React from "react";
+import Navbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.css";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import Main from "./components/elements/Main";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/resume" component={Resume} />
-          <Route exact path="/projects" component={Project} />
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
       </Router>
